@@ -1,23 +1,69 @@
+import os
+from dotenv import load_dotenv
 import requests
 import google.generativeai as genai
+from datetime import datetime
 
-# APIキーとWebhook URLをセット
-GEMINI_API_KEY = "AIzaSyAfabpB2r9Q3mVH9c7I0dJeRebzkRVEvb8"
-TEAMS_WEBHOOK_URL = "https://accenture.webhook.office.com/webhookb2/60ad6b03-7f46-46a8-9d83-0d579a4eda48@e0793d39-0939-496d-b129-198edd916feb/IncomingWebhook/f25b751d00a8489ba32552f2c4b045f3/fe097da7-39f5-4835-9095-0a98f716f456/V28DCdRxnpz8ZEUc_9dJG36D2phu3S96Fbbd-0NC3yqT01"
+# .envを読み込む
+load_dotenv()
 
-# Gemini APIの設定
-genai.configure(api_key=GEMINI_API_KEY)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+TEAMS_WEBHOOK_URL = os.getenv("TEAMS_WEBHOOK_URL")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+CITY = os.getenv("CITY", "Tokyo,jp")
 
-# モデル呼び出し
-model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
-response = model.generate_content("以下の要素からオススメされる食事を自炊する場合と、外食す場合でそれぞれ3つ挙げよ。- 今日が月の何営業日なのか（月の初めであれば元気、月末に向かうにつれて体が疲れている状態とする）。- 25日は給料日なので25日～月末までは少し豪華な提案をしてもよい。- 今日の気温と湿度（気温や湿度が高い場合はサッパリとしたもの、あっさりとしたものがよい）- 曜日（週の後半は元気が出るものがよい）")
-fortune = response.text.strip()
-print("生成された占い：", fortune)
+# 天気情報の取得
+weather_url = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={OPENWEATHER_API_KEY}&units=metric&lang=ja"
+weather_data = requests.get(weather_url).json()
+print(weather_data)  # デバッグ表示
 
-# Teamsに投稿
-payload = {"text": fortune}
-r = requests.post(TEAMS_WEBHOOK_URL, json=payload)
-if r.status_code == 200:
-    print("✅ Teamsに投稿成功！")
+if "main" in weather_data and "weather" in weather_data:
+    temperature = weather_data["main"]["temp"]
+    humidity = weather_data["main"]["humidity"]
+    weather_desc = weather_data["weather"][0]["description"]
 else:
-    print(f"❌ 投稿失敗: {r.status_code} {r.text}")
+    weather_desc = weather_data.get("message", "天気情報が取得できませんでした")
+    temperature = "-"
+    humidity = "-"
+
+# 日付・曜日
+today = datetime.now()
+weekday = ["月", "火", "水", "木", "金", "土", "日"][today.weekday()]
+
+# プロンプト
+prompt = f"""
+今日の日付は{today.year}年{today.month}月{today.day}日です。
+天気は「{weather_desc}」、気温は{temperature}度、湿度は{humidity}%です。
+
+以下の条件を考慮し、バラエティに富み、毎日違う楽しさや新鮮味がある、今日の夕食プランを提案してください。
+・曜日による変化（月曜日はリセット、金曜日はご褒美、週末は特別感など）
+・月の初め、中旬、月末で体調や気分が変わること（例：月末は疲れがち、給料日後はちょっと豪華に）
+・季節感や旬の食材を意識すること
+・最近の日本や世界のイベントや記念日を意識すること（例：祝日、行事、話題のグルメ、トレンド）
+・ジャンルが偏らないよう、複数のジャンルで提案すること
+・昨日・直近と同じような料理や食材になりすぎないように（マンネリ化防止）
+・たまには珍しい料理や話題の料理、季節の限定メニューなども取り入れること
+・バランスの良い栄養や、疲れている場合は体調ケアできる要素も考慮すること
+・自炊と外食、それぞれ3つずつ具体的なメニューを挙げてください
+・各メニューには、理由や一言コメントを添えてください
+
+仕事が終わったあとも、ちょっと楽しみになるような提案を、ユーモアも交えてお願いします。
+"""
+
+# Gemini API
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
+response = model.generate_content(prompt)
+result = response.text.strip()
+
+# Teams投稿
+payload = {"text": result}
+if TEAMS_WEBHOOK_URL:
+    r = requests.post(TEAMS_WEBHOOK_URL, json=payload)
+    if r.status_code == 200:
+        print("✅ Teamsに投稿成功！")
+    else:
+        print(f"❌ 投稿失敗: {r.status_code} {r.text}")
+else:
+    print("⚠️ Teams Webhook URLが設定されていません。以下が生成結果です：\n")
+    print(result)

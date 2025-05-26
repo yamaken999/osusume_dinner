@@ -1,0 +1,292 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats",
+    "@odata.count": 19,
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/chats?$skiptoken=1.kscDYs0BDcYAAAEP8P6BqlByb3BlcnRpZXOCqVN5bmNTdGF0ZdnkZXlKa1pXeHBkbVZ5WldSVFpXZHRaVzUwY3lJNlczc2ljM1JoY25RaU9pSXlNREkwTFRBMUxUSTRWREExT2pJeU9qSXpMak01S3pBd09qQXdJaXdpWlc1a0lqb2lNakF5TlMwd05TMHhObFF4TlRveE1Eb3pPQzR6TmpRck1EQTZNREFpZlYwc0lucGxjbTlNVFZOVVJHVnNhWFpsY21Wa1UyVm5iV1Z1ZEhNaU9sdGRMQ0p6YjNKMFQzSmtaWElpT2pBc0ltbHVZMngxWkdWYVpYSnZURTFUVkNJNlptRnNjMlY5rExhc3RQYWdlU2l6ZaIyMA%3d%3d",
+    "value": [
+        {
+            "id": "19:5fb8d18dd38b40a4ae0209888adf5c38@thread.v2",
+            "topic": "CC Call v3",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "lastUpdatedDateTime": "0001-01-01T00:00:00Z",
+            "chatType": "unknownFutureValue",
+            "webUrl": null,
+            "tenantId": null,
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:1029467b0bf24f17955522ad0ddb6604@thread.v2",
+            "topic": "Discussion",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "lastUpdatedDateTime": "0001-01-01T00:00:00Z",
+            "chatType": "unknownFutureValue",
+            "webUrl": null,
+            "tenantId": null,
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:48d31887-5fad-4d73-a9f5-3c356e68a038_defb13c8-df1f-4425-801f-fa689f605509@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2023-09-14T14:19:00.818Z",
+            "lastUpdatedDateTime": "2025-04-06T02:40:13.2Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A48d31887-5fad-4d73-a9f5-3c356e68a038_defb13c8-df1f-4425-801f-fa689f605509%40unq.gbl.spaces/0?tenantId=cb8d0f5e-295e-44f1-8cab-184ae827c864",
+            "tenantId": "cb8d0f5e-295e-44f1-8cab-184ae827c864",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:2d30b9f3f2d845babfdd0e3ac8865381@thread.v2",
+            "topic": "[OMS-1560] InnsbruckTourismusTouristOffice_January",
+            "createdDateTime": "2023-01-04T11:24:48.999Z",
+            "lastUpdatedDateTime": "2023-05-22T15:17:23.981Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A2d30b9f3f2d845babfdd0e3ac8865381%40thread.v2/0?tenantId=8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "tenantId": "8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:940f44f48ebe4477ac09be9b12f4d866@thread.v2",
+            "topic": "[OMS-1937] UNKNOWN_May_2023_DE,ES",
+            "createdDateTime": "2023-05-10T16:24:35.302Z",
+            "lastUpdatedDateTime": "2023-05-15T07:22:04.735Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A940f44f48ebe4477ac09be9b12f4d866%40thread.v2/0?tenantId=8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "tenantId": "8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:9aa6e3e23be04d43b8f0337a83622d51@thread.v2",
+            "topic": "[OMS-687] Mon Lit Cabane DE",
+            "createdDateTime": "2022-04-27T13:56:49.149Z",
+            "lastUpdatedDateTime": "2024-11-15T16:03:04.372Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A9aa6e3e23be04d43b8f0337a83622d51%40thread.v2/0?tenantId=8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "tenantId": "8d237650-cdc1-40e1-899c-5601e055f3fe",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:4140ad82-2198-401d-a488-138a22a22a70_48d31887-5fad-4d73-a9f5-3c356e68a038@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2024-10-02T14:08:11.348Z",
+            "lastUpdatedDateTime": "2024-10-10T15:42:51.514Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A4140ad82-2198-401d-a488-138a22a22a70_48d31887-5fad-4d73-a9f5-3c356e68a038%40unq.gbl.spaces/0?tenantId=72625c40-4d0a-4a8b-b71a-c44f4bd2a1e2",
+            "tenantId": "72625c40-4d0a-4a8b-b71a-c44f4bd2a1e2",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:meeting_OGRhNzZiY2YtZjMzOS00ZGU0LWE1MDMtYTcyOTk2ODU1ZjZk@thread.v2",
+            "topic": "test meeting",
+            "createdDateTime": "0001-01-01T00:00:00Z",
+            "lastUpdatedDateTime": "0001-01-01T00:00:00Z",
+            "chatType": "unknownFutureValue",
+            "webUrl": null,
+            "tenantId": null,
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:1b5b1e142a094801ae20b5ac76959396@thread.v2",
+            "topic": null,
+            "createdDateTime": "2024-07-31T07:18:08.252Z",
+            "lastUpdatedDateTime": "2024-07-31T07:18:08.252Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A1b5b1e142a094801ae20b5ac76959396%40thread.v2/0?tenantId=02b3c73d-a916-488f-9739-752ce40f050a",
+            "tenantId": "02b3c73d-a916-488f-9739-752ce40f050a",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:7b118e3871404e8eb305d3222abfe757@thread.v2",
+            "topic": null,
+            "createdDateTime": "2024-07-31T07:16:37.446Z",
+            "lastUpdatedDateTime": "2024-07-31T07:16:37.446Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A7b118e3871404e8eb305d3222abfe757%40thread.v2/0?tenantId=02b3c73d-a916-488f-9739-752ce40f050a",
+            "tenantId": "02b3c73d-a916-488f-9739-752ce40f050a",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:1b5c3f71-ee0b-4383-8e7b-d4face23c3f3_48d31887-5fad-4d73-a9f5-3c356e68a038@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2024-07-31T07:12:33.509Z",
+            "lastUpdatedDateTime": "2024-07-31T07:12:33.509Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A1b5c3f71-ee0b-4383-8e7b-d4face23c3f3_48d31887-5fad-4d73-a9f5-3c356e68a038%40unq.gbl.spaces/0?tenantId=02b3c73d-a916-488f-9739-752ce40f050a",
+            "tenantId": "02b3c73d-a916-488f-9739-752ce40f050a",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:25d9a98e-f3b8-4ff5-8f8d-d19f35bb6e53_48d31887-5fad-4d73-a9f5-3c356e68a038@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2024-07-16T02:33:53.775Z",
+            "lastUpdatedDateTime": "2024-07-16T02:34:19.729Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A25d9a98e-f3b8-4ff5-8f8d-d19f35bb6e53_48d31887-5fad-4d73-a9f5-3c356e68a038%40unq.gbl.spaces/0?tenantId=62159e29-f055-4971-a953-1dcb60ae4f0c",
+            "tenantId": "62159e29-f055-4971-a953-1dcb60ae4f0c",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:05daaf136f194419a2d6e362c48d859e@thread.v2",
+            "topic": "233-24-1864 - ClientChat",
+            "createdDateTime": "2024-07-04T16:45:28.817Z",
+            "lastUpdatedDateTime": "2024-07-04T16:45:28.817Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A05daaf136f194419a2d6e362c48d859e%40thread.v2/0?tenantId=adead877-80c0-432f-9dd6-f71041589c40",
+            "tenantId": "adead877-80c0-432f-9dd6-f71041589c40",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:48d31887-5fad-4d73-a9f5-3c356e68a038_502a9613-20e0-4efc-bf51-1139457bd7d8@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2024-06-13T17:08:35.483Z",
+            "lastUpdatedDateTime": "2024-06-13T17:08:51.346Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A48d31887-5fad-4d73-a9f5-3c356e68a038_502a9613-20e0-4efc-bf51-1139457bd7d8%40unq.gbl.spaces/0?tenantId=30a5145e-75bd-4212-bb02-8ff9c0ea4ae9",
+            "tenantId": "30a5145e-75bd-4212-bb02-8ff9c0ea4ae9",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:48d31887-5fad-4d73-a9f5-3c356e68a038_c0b54104-6559-47f1-be79-09a959ec58fa@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2024-05-31T06:55:39.498Z",
+            "lastUpdatedDateTime": "2024-05-31T06:55:39.498Z",
+            "chatType": "oneOnOne",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A48d31887-5fad-4d73-a9f5-3c356e68a038_c0b54104-6559-47f1-be79-09a959ec58fa%40unq.gbl.spaces/0?tenantId=565f6375-c3eb-48f7-8f38-81731781faef",
+            "tenantId": "565f6375-c3eb-48f7-8f38-81731781faef",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:1e7c2328a892456e9f8c6d7d35a8b17c@thread.v2",
+            "topic": "Megan Bowen_Alex Wilber_Sundar Ganesan_ArchivedChat_ArchivedChat",
+            "createdDateTime": "2024-05-28T06:01:27.982Z",
+            "lastUpdatedDateTime": "2024-05-28T06:01:33.012Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A1e7c2328a892456e9f8c6d7d35a8b17c%40thread.v2/0?tenantId=d9554b3e-c638-4671-8389-00929dbffe63",
+            "tenantId": "d9554b3e-c638-4671-8389-00929dbffe63",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:b8e17c977cd044dead3f908eed9f77b4@thread.v2",
+            "topic": "Megan Bowen_Alex Wilber_Sundar Ganesan_ArchivedChat_ArchivedChat",
+            "createdDateTime": "2024-05-28T05:46:19.72Z",
+            "lastUpdatedDateTime": "2024-05-28T05:46:24.84Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8e17c977cd044dead3f908eed9f77b4%40thread.v2/0?tenantId=d9554b3e-c638-4671-8389-00929dbffe63",
+            "tenantId": "d9554b3e-c638-4671-8389-00929dbffe63",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:1d5cf74641204f8492c1a958f18a7817@thread.v2",
+            "topic": "Megan Bowen_Sundar Ganesan_ArchivedChat_ArchivedChat",
+            "createdDateTime": "2024-05-28T05:45:31.171Z",
+            "lastUpdatedDateTime": "2024-05-28T05:45:36.817Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3A1d5cf74641204f8492c1a958f18a7817%40thread.v2/0?tenantId=d9554b3e-c638-4671-8389-00929dbffe63",
+            "tenantId": "d9554b3e-c638-4671-8389-00929dbffe63",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        },
+        {
+            "id": "19:b84305f994694ea2a637f19dd5c9db19@thread.v2",
+            "topic": "Megan Bowen_Alex Wilber_Sundar Ganesan_ArchivedChat_ArchivedChat",
+            "createdDateTime": "2024-05-28T05:22:17.52Z",
+            "lastUpdatedDateTime": "2024-05-28T05:22:22.927Z",
+            "chatType": "group",
+            "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab84305f994694ea2a637f19dd5c9db19%40thread.v2/0?tenantId=d9554b3e-c638-4671-8389-00929dbffe63",
+            "tenantId": "d9554b3e-c638-4671-8389-00929dbffe63",
+            "isHiddenForAllMembers": false,
+            "onlineMeetingInfo": null,
+            "viewpoint": {
+                "isHidden": false,
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            }
+        }
+    ]
+}
